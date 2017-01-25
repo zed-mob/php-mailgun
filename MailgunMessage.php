@@ -94,7 +94,7 @@ class MailgunMessage implements MailgunObject
 
         $this->_to[] = array($address, $name);
         if (is_array($recipientVars)) {
-            $this->_recipientVars[$address] = $recipientVars;
+            $this->_recipientVars = $recipientVars;
         }
     }
 
